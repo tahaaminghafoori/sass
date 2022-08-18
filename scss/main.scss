@@ -1,0 +1,12 @@
+@import 'vars';
+@import 'funcs';
+@mixin color($color) {
+    background-color: $color;
+}
+
+body{
+    @include color($color);
+}
+p{
+    color: get_color();
+}
